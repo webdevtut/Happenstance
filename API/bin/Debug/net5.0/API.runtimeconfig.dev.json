@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\noobot\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\noobot\\.nuget\\packages"
+    ]
+  }
+}
