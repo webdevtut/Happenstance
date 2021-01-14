@@ -1,0 +1,4 @@
+{
+    "csharpextensions.privateMemberPrefix": "_",
+    "csharpextensions.useThisForCtorAssignments": false
+}

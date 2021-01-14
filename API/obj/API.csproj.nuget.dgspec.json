@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj": {}
+    "C:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj": {
+    "C:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\noobot\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\noobot\\Documents\\Projects\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\noobot\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,12 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.2, )"
