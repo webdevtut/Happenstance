@@ -1,5 +1,9 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace API.Entities
 {
+
+    [Table("Photos")]
     public class Photo
     {
 
@@ -8,5 +12,8 @@ namespace API.Entities
         public bool Ismain { get; set; }
 
         public string PublicId { get; set; }
+        public AppUser AppUser { get; set; }
+
+        public int AppUserId { get; set; }
     }
 }
