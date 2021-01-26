@@ -1,0 +1,14 @@
+<h4>Internal Server Error. Reloading the page will make error disappear </h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">If you are seeing this don't blame angular</p>
+    <p>what to do next?</p>
+    <ol>
+        <li>Open the chrome Development tools</li>
+        <li>Inspect the network tab</li>
+        <li>check failing request URL- make sure it is correct</li>
+        <li>Reproduce the error in Postman- If we see same respone then issue is not with angular</li>
+    </ol>
+    <p>Following is Stack trace- this is where your invastigation should start!</p>
+    <code class="mt-5" style="background-color: whitesmoke;">{{error.details}}</code>
+</ng-container>
