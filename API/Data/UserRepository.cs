@@ -14,7 +14,7 @@ namespace API.Data
             _context = context;
         }
 
-        public async Task<IEnumerable<AppUser>> GetUserAsync()
+        public async Task<IEnumerable<AppUser>> GetUsersAsync()
         {
             return await _context.Users
             .Include(p => p.Photos)
