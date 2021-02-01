@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.0.5",
     "@angular/platform-browser-dynamic": "~11.0.5",
     "@angular/router": "~11.0.5",
+    "@kolkov/ngx-gallery": "^1.2.3",
     "bootstrap": "4.1.1",
     "bootswatch": "^4.6.0",
     "font-awesome": "^4.7.0",
