@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
-            <a class="navbar-brand" routerLink='/'>DatingApp</a>
+            <a class="navbar-brand" routerLink='/'>Mingle™</a>
 
               <ul class="navbar-nav mr-auto">
                 <ng-container *ngIf= "accountService.currentUser$ | async">
@@ -22,7 +22,8 @@
               </ul>
 
               <div class="dropdown" *ngIf= "(accountService.currentUser$ | async) as user" dropdown>
-                <a  class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.username | titlecase}}</a>
+                <img src="{{user.photoUrl}}" alt="{{user.username}}">
+                <a  class="dropdown-toggle text-light ml-2" dropdownToggle>Welcome {{user.username | titlecase}}</a>
                 <div class="dropdown-menu mt-3" *dropdownMenu>
                   <a  class="dropdown-item"routerLink='member/edit' >Edit Profile</a>
                   <div class="dropdown-divider"></div>
