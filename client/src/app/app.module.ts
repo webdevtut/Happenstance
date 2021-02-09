@@ -64,5 +64,5 @@ import { TextInputComponent } from './_forms/text-input/text-input.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }``
+export class AppModule { }
  
