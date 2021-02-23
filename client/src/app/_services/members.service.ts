@@ -66,7 +66,7 @@ export class MembersService {
             }))
   }
 
-  getMember(username: string ) {
+  getMember(username: any ) {
     const member = [...this.memberCache.values()]
     .reduce((arr, elem) => arr.concat(elem.result), [])
     .find((member:Member) => member.username === username)
