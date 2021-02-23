@@ -46,7 +46,7 @@
             style="display: inline-block; margin-bottom: 20px;"></ngx-gallery>
           </tab>
           <tab heading="Messages" (selectTab)="onTabActivated($event)">
-            <app-member-messages [messages]="messages">
+            <app-member-messages [messages]="messages" [username]="member.username">
                 </app-member-messages>
           </tab>
         </tabset>
