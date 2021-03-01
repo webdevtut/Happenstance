@@ -16,7 +16,7 @@ import { environment } from 'src/environments/environment';
 export class PhotoEditorComponent implements OnInit {
   @Input() member: Member;
   uploader : FileUploader;
-  hasBaseDropeZone = false;
+  hasBaseDropzoneOver = false;
   baseUrl = environment.apiUrl;
   user : User;
 
@@ -29,7 +29,7 @@ export class PhotoEditorComponent implements OnInit {
   }
 
   fileOverBase(e: any){
-    this.hasBaseDropeZone = e;
+    this.hasBaseDropzoneOver = e;
   }
 
   setMainPhoto(photo: Photo){

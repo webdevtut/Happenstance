@@ -19,6 +19,7 @@ export class AdminGuard implements CanActivate {
           return true;
         }
         this.toastr.error('You can not enter this area');
+        return false;
       })
     )
   }
