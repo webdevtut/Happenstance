@@ -13,10 +13,10 @@ import { getPaginatedResult, getPaginationHeaders } from './paginationHelper';
 export class MessageService {
 
   baseUrl = "https://localhost:5001/api/";
-  hubUrl = environment.hubUrl;
+  hubUrl = "https://localhost:5001/hubs/";
   private hubConnection: HubConnection;
   private messageThreadSource = new BehaviorSubject<Message[]>([]);
-  messageThreadSource$ = this.messageThreadSource.asObservable();
+  messageThread$ = this.messageThreadSource.asObservable();
 
 
   constructor(private http: HttpClient) { }
@@ -37,7 +37,10 @@ export class MessageService {
   }
 
   stopHubConnection(){
-    this.hubConnection.stop();
+    if(this.hubConnection){
+      this.hubConnection.stop();
+    }
+
   }
 
 
