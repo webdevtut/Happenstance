@@ -62,9 +62,9 @@ namespace API.SignalR
                 Content = createMessageDto.Content
             };
 
-            _messageReopsitory.AddMessage(message);
+            _messageRepository.AddMessage(message);
 
-            if (await _messageReopsitory.SaveAllAsync())
+            if (await _messageRepository.SaveAllAsync())
             {
                 var group = GetGroupName(sender.UserName, recipient.UserName);
                 await Clients.Group(group).SendAsync("NewMessage", _mapper.Map<MessageDto>(message));
