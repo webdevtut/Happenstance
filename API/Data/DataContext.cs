@@ -18,6 +18,7 @@ namespace API.Data
         }
         public DbSet<UserLike> Likes { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Photo> Photos { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Connection> Connections { get; set; }
 
@@ -63,6 +64,8 @@ namespace API.Data
             .HasOne(U => U.Sender)
             .WithMany(M => M.MessagesSent)
             .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Photo>().HasQueryFilter(p => p.IsApproved);
 
             builder.ApplyUtcDateTimeConverter();
         }
