@@ -8,6 +8,7 @@ import { Message } from 'src/app/_models/message';
 import { User } from 'src/app/_models/user';
 import { AccountService } from 'src/app/_services/account.service';
 import { MembersService } from 'src/app/_services/members.service';
+import { ToastrService } from 'ngx-toastr';
 import { MessageService } from 'src/app/_services/message.service';
 import { PresenceService } from 'src/app/_services/presence.service';
 
@@ -25,8 +26,9 @@ export class MemberDetailComponent implements OnInit, OnDestroy {
   messages : Message[] = [];
   user: User;
 
-  constructor(public presence: PresenceService, private route: ActivatedRoute, private messageService: 
-      MessageService, private accountService: AccountService, private router : Router) { 
+  constructor(public presence: PresenceService, private route: ActivatedRoute, private memberService: MembersService, 
+      private toastr: ToastrService, private messageService: MessageService, 
+      private accountService: AccountService, private router : Router) { 
         this.accountService.currentUser$.pipe(take(1)).subscribe(user => this.user = user);
         this.router.routeReuseStrategy.shouldReuseRoute = () => false;
       }
@@ -65,6 +67,12 @@ export class MemberDetailComponent implements OnInit, OnDestroy {
       })
     }
     return imageUrls;
+  }
+
+  addLike(member : Member){
+    this.memberService.addLike(member.username).subscribe(()=> {
+      this.toastr.success('You have liked ' + member.knownAs);
+    })
   }
 
     loadMessages(){
