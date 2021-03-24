@@ -4,3 +4,19 @@
 .middle {
     text-align: center;
 }
+img {
+    width: 700px;
+    height: auto;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    float: left;
+}
+
+.center{
+    margin-top: 200px;
+}
+
+.form {
+    float: right; 
+    margin-top: 130px;
+}
