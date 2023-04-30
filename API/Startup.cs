@@ -73,6 +73,8 @@ namespace API
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
