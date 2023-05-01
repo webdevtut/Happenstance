@@ -1,4 +1,4 @@
-<div class="text-center mt-3">
+<div class="innerList text-center mt-3">
     <h2>Your Matches - {{pagination?.totalItems}} found</h2>
 </div>
 
@@ -22,8 +22,8 @@
                 </option>
             </select>
         </div>
-        <button class="btn-primary ml-1" type="submit">Apply Filters</button>
-        <button (click)="resetFilters()" class="btn-info ml-1" type="submit">Reset Filters</button>
+        <button class="btn-primary ml-1 mb-1" type="submit">Apply Filters</button>
+        <button (click)="resetFilters()" class="btn-info ml-1 mb-1" type="submit">Reset Filters</button>
 
         <div class="col">
             <div class="btn-group float-right">
@@ -50,8 +50,8 @@
 
     </form>
 </div>
-<div class="row">
-    <div *ngFor="let member of members" class="col-2">
+<div class="row mx-2">
+    <div *ngFor="let member of members" class="col-lg-2 col-md-4 col-sm-6">
         <app-member-card [member]="member">
         </app-member-card>
     </div>

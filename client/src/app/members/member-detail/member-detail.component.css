@@ -13,3 +13,13 @@
     background-color: #fff;
     border-top: none;
 }
+
+.top-mobile{
+    margin-top: 0px;
+  }
+
+@media (max-width: 768px) {
+    .top-mobile{
+      margin-top: 75px !important;
+    }
+  }

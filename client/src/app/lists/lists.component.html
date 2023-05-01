@@ -1,4 +1,4 @@
-<div class="text-center mt-3">
+<div class="text-center mt-3 innerList">
     <h2>{{predicate === 'liked' ? 'Members I Like' : 'Members Who Like Me'}}</h2>
 </div>
 
@@ -12,8 +12,8 @@
         </div>
     </div>
 
-    <div class="row mt-3">
-        <div class="col-2" *ngFor="let member of members">
+    <div class="row mt-3 mx-2">
+        <div class="col-lg-2 col-md-4 col-sm-6" *ngFor="let member of members">
             <app-member-card [member]="member"></app-member-card>
         </div>
     </div>

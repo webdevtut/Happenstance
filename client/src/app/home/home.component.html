@@ -1,35 +1,41 @@
-<div class="center">
-  <img src="./assets/mingle.jpg" alt="">
-</div>
+<div class="ImgForm">
+  <div *ngIf = "!registerMode" class="img-container">
+    <img class="hero_image" src="./assets/mingle.jpg" alt="">
+  </div>
 
   <div class="form">
-    <div *ngIf = "!registerMode" style="text-align: center;">
-        <h1><b>Find Your match</b></h1>
-        <p class="large">Come on in to see your matches... </p>
-        <p class="large">All you need to do is Sign up!</p>
-        <div class="text-center">
-            <button (click)="registerToggle()" class="btn btn-primary btn-lg mr-2">Register</button>
-            <button type="button" class="btn btn-info btn-lg" (click)="openModal(template)">Contact us</button>
- 
-<ng-template #template>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">This site is created By Tushar Kadam</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <p class="large">About me : </p>
-    <p>I am a full stack developer looking for any job opportunity</p>
-    <p>To hire me contact @ <b>tusharlookingforjob@gmail.com</b> </p>
-    <p> Mobile no. <b>+91-8693099527</b></p>
-    <p>My other works : A React based Face Detection WebApp</p>
-    <p class="middle large"><a href="https://demofacerecognition.herokuapp.com/"><span class="glyphicon">&#xe128;</span> FaceRecognitionApp</a></p>
-  </div>
-</ng-template>
-        </div>
+    <div *ngIf="!registerMode" style="text-align: center;">
+      <h1><b>Find Your match</b></h1>
+      <p class="large">Come on in to see your matches... </p>
+      <p class="large">All you need to do is Sign up!</p>
+      <div class="text-center">
+        <button (click)="registerToggle()" class="btn btn-primary btn-lg mb-2 mr-2">Register</button>
+        <button type="button" class="btn btn-info btn-lg mb-2" (click)="openModal(template)">Contact us</button>
+      </div>
     </div>
-    </div>
+  
+    <ng-template #template>
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">This Website is created By  <a href="https://github.com/webdevtut">Tushar Kadam</a> </h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="large">About me : </p>
+        <p>I am a full stack developer looking for any job opportunity</p>
+        <p>To hire me contact @ <b>tusharlookingforjob@gmail.com</b> </p>
+        <p> Mobile no. <b>+91-8693099527</b></p>
+        <p>My other works : NodeJS, ExpressJS, MongoDB Tourism WebApp</p>
+        <p class="middle large"><a href="https://d-tour.up.railway.app/"><span
+              class="glyphicon">&#xe128;</span> DéTour™</a></p>
+      </div>
+    </ng-template>
+  </div>
+</div>
+
+
+
     <div *ngIf = "registerMode" >
         <div class="row justify-content-center">
             <div class="col-9 md-5">
