@@ -4,6 +4,14 @@
 
 img {
     max-height: 50px;
-    border: 2px solid white;
     display: inline;
+}
+.nav-item {
+	margin-right: .5rem
+}
+.navbar-nav {
+	flex-direction: row !important;
+}
+.nav-user {
+	align-self: flex-end !important;
 }

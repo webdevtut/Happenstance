@@ -4,19 +4,38 @@
 .middle {
     text-align: center;
 }
-img {
-    width: 700px;
-    height: auto;
+.img-container {
+    /* height: auto; */
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    float: left;
+    /* float: left; */
+    margin-bottom: 2rem;
 }
 
 .center{
     margin-top: 200px;
 }
 
-.form {
-    float: right; 
+.ImgForm{
+    display: flex;
     margin-top: 130px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .ImgForm{
+      margin-top: 225px !important;
+    }
+  }
+
+.form {
+
+
+}
+
+.hero_image {
+    height: auto;
+    width: 100vw;
+    max-width: 600px;
 }

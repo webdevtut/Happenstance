@@ -13,3 +13,9 @@
     background-color: #fff;
     border-top: none;
 }
+
+@media (max-width: 480px) {
+    .top-card-mobile{
+      margin-top: 65px !important;
+    }
+  }

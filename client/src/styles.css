@@ -45,4 +45,24 @@
     border-top: 1px solid #eee;
     padding: 15px 0;
   }
+
+  @media (min-width: 768px) {
+    .navbar-expand-md > .container{
+      flex-wrap: wrap !important;
+    }
+  }
+
+  .card {
+    min-width: 125px;
+  }
+
+  @media (max-width: 768px) {
+    .innerList{
+      margin-top: 170px !important;
+    }
+  }
+
+
+
+
   
