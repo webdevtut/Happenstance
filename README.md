@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/webdevtut/MingleWebsite">
-    <img src="client/src/assets/logo.png" alt="Logo" width="80" height="80">
+    <img src="client/src/assets/logo.png" alt="Logo" width="200" height="50">
   </a>
 
   <h3 align="center">Happenstance (Mingle 2.0)</h3>
@@ -16,7 +16,7 @@
   <p align="center">
     Wholesome Dating and Chat Application
     <br />
-    <a href="https://github.com/webdevtut/MingleWebsite/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/webdevtut/MingleWebsite/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://happenstance.up.railway.app/">View Demo</a>
