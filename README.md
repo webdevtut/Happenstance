@@ -7,7 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/webdevtut/MingleWebsite">
+  <a href="https://github.com/webdevtut/Happenstance">
     <img src="client/src/assets/logo.png" alt="Logo" width="200" height="50">
   </a>
 
@@ -16,14 +16,14 @@
   <p align="center">
     Wholesome Dating and Chat Application
     <br />
-    <a href="https://github.com/webdevtut/MingleWebsite/blob/master/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/webdevtut/Happenstance/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://happenstance.up.railway.app/">View Demo</a>
     ·
-    <a href="https://github.com/webdevtut/MingleWebsite/issues">Report Bug</a>
+    <a href="https://github.com/webdevtut/Happenstance/issues">Report Bug</a>
     ·
-    <a href="https://github.com/webdevtut/MingleWebsite/issues">Request Feature</a>
+    <a href="https://github.com/webdevtut/Happenstance/issues">Request Feature</a>
   </p>
 </div>
 
@@ -63,8 +63,14 @@ Basic Dating application created from scratch for self-learning and showcase pur
 
 Features :
 
-- Sacalable image upload functionality (Cloudinary)
+- Scalable image upload functionality (Cloudinary)
+
+[![Happenstance Feature Upload][feature-upload]](https://happenstance.up.railway.app/)
+
 - Live Chat Functionality (SignalR)
+
+[![Happenstance Feature Upload][feature-chat]](https://happenstance.up.railway.app/)
+
 - Foolproof authentication and responsive for multiple screens :smile:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -101,7 +107,7 @@ Install Node v14+ and .NET 6 SDK
 1. Install Postgres and Nuget for development purpose
 2. Clone the repo
    ```sh
-   git clone https://github.com/webdevtut/MingleWebsite.git
+   git clone https://github.com/webdevtut/Happenstance.git
    ```
 3. Install NPM packages
    ```sh
@@ -135,7 +141,7 @@ _For more examples, please refer to the [Documentation](https://happenstance.up.
   - [ ] Camera access on device for taking and uploading straight from device
   - [ ] Map integration for future use
 
-See the [open issues](https://github.com/webdevtut/MingleWebsite/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/webdevtut/Happenstance/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +176,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@tushar-web-dev](https://linkedin.com/in/tushar-web-dev/) - tusharlookingforjob@gmail.com
 
-Project Link: [https://github.com/webdevtut/MingleWebsite](https://github.com/webdevtut/MingleWebsite)
+Project Link: [https://happenstance.up.railway.app/](https://happenstance.up.railway.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,20 +197,22 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/webdevtut/MingleWebsite/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/webdevtut/MingleWebsite/blob/master/LICENSE.txt
+[issues-shield]: https://img.shields.io/github/issues/webdevtut/Happenstance.svg?style=for-the-badge
+[issues-url]: https://github.com/webdevtut/Happenstance/issues
+[license-shield]: https://img.shields.io/github/license/webdevtut/Happenstance.svg?style=for-the-badge
+[license-url]: https://github.com/webdevtut/Happenstance/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/tushar-web-dev/
 [product-screenshot]: images/screenshot.png
+[feature-chat]: images/feature-chat.gif
+[feature-upload]: images/feature-upload.gif
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 [Angular-url]: https://angular.io/
-[Postgres.io]: https://img.shields.io/badge/Postgres-12-green
+[Postgres.io]: https://img.shields.io/badge/PostGreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white
 [Postgres-url]: https://www.postgresql.org/
-[Node.io]: https://img.shields.io/badge/node-12-brightgreen
+[Node.io]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
 [Node-url]: https://nodejs.org/
-[.NET.io]: https://img.shields.io/badge/.NET-6-blue
+[.NET.io]: https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white
 [.NET-url]: https://dotnet.microsoft.com/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
